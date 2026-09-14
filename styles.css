@@ -29,7 +29,15 @@
   --color-gold:#FFD670;
   --color-lime:#E9FF70;
 }
+.hero{
+  background-image: url("https://everest-icecream.com.au/wp-content/uploads/2024/05/dixie-group-2-0992-lr-wfebvsfzpiga-wfrtygycnsjh.jpg")
+}
 
+.hero h1 {
+  text-shadow: 2px 2px 5px black;
+  font-size: 85px;
+  color: (white);
+}
 /* TYPE
  *
  * Two faces: one for headings, chosen for tone; one for body, chosen for
