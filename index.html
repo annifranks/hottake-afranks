@@ -5,22 +5,7 @@
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>My Hot Take</title>
-
-  <!--
-      THE THREE TAGS. Tailwind and daisyUI, no build step, nothing installed.
-      Open this file with Live Server and start working.
-
-      Two honest notes:
-        1. The last tag is Tailwind's BROWSER build. Tailwind's own docs say it
-           is "designed for development purposes only, and is not intended for
-           production." That is fine for now. Unit 8 replaces it with a real
-           built stylesheet, because publishing to a public address is where
-           "development only" stops being acceptable.
-        2. These load from jsdelivr, which means jsdelivr sees a request from
-           every reader of your site. That is your call to make on your own
-           project. Read Unit 8's "what a page costs its reader" before you
-           decide it does not matter.
-    -->
+  
   <link href="https://cdn.jsdelivr.net/npm/daisyui@5" rel="stylesheet" type="text/css" />
   <link href="https://cdn.jsdelivr.net/npm/daisyui@5/themes.css" rel="stylesheet" type="text/css" />
   <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
@@ -43,60 +28,57 @@
     </div>
   </div>
 
-  <div class="container">
-    <div class="row columns-3">
-<div class="card bg-base-100 w-96 shadow-sm">
-  <figure>
-    <img
-      src="https://img.daisyui.com/images/stock/photo-1606107557195-0e29a4b5b4aa.webp"
-      alt="Shoes" />
-  </figure>
-  <div class="card-body">
-    <h2 class="card-title">Card Title</h2>
-    <p>A card component has a figure, a body part, and inside body there are title and actions parts</p>
-    <div class="card-actions justify-end">
-      <button class="btn btn-primary">Buy Now</button>
+  <!-- FEATURE BREAKOUT -->
+  <div class="max-w-5xl mx-auto my-10">
+    <div class="grid gap-6 grid-cols-1 md:grid-cols-3">
+
+      <!-- CARD 1 -->
+      <div class="card bg-base-100 shadow-sm">
+        <figure class="px-10 pt-10">
+          <img src="https://www.culinaryhill.com/wp-content/uploads/2023/05/Ice-Cream-Sundae-Bar-Culinary-Hill-LR-18-e1689737649275-1200x800.jpg" alt="Shoes"
+            class="rounded-xl" />
+        </figure>
+        <div class="card-body items-center text-center">
+          <h2 class="card-title">More Toppings</h2>
+          <p>A card component has a figure, a body part, and inside body there are title and actions parts</p>
+          <div class="card-actions">
+            <button class="btn btn-primary">Buy Now</button>
+          </div>
+        </div>
+      </div>
+
+      <!-- CARD 2 -->
+      <div class="card bg-base-100 shadow-sm">
+        <figure class="px-10 pt-10">
+          <img src="https://takeawaypackaging.co.uk/wp-content/uploads/2022/10/Compostable-Ice-Cream-Spoons-3--1024x1024.jpg" alt="Shoes"
+            class="rounded-xl" />
+        </figure>
+        <div class="card-body items-center text-center">
+          <h2 class="card-title">Easier to Eat</h2>
+          <p>A card component has a figure, a body part, and inside body there are title and actions parts</p>
+          <div class="card-actions">
+            <button class="btn btn-primary">Buy Now</button>
+          </div>
+        </div>
+      </div>
+
+      <!-- CARD 3 -->
+      <div class="card bg-base-100 shadow-sm">
+        <figure class="px-10 pt-10">
+          <img src="https://i.pinimg.com/originals/97/27/e2/9727e271dc22945b5d13e06115ca29a7.jpg" alt="Shoes"
+            class="rounded-xl" />
+        </figure>
+        <div class="card-body items-center text-center">
+          <h2 class="card-title">Less Messy</h2>
+          <p>A card component has a figure, a body part, and inside body there are title and actions parts</p>
+          <div class="card-actions">
+            <button class="btn btn-primary">Buy Now</button>
+          </div>
+        </div>
+      </div>
+
     </div>
-  </div>
-</div>
-    </div>
-  </div>
-
-  <!--
-      SWAP THE TAKE FOR YOUR OWN BEFORE STAGE TWO. Every stage from here builds
-      on this page, and it is far easier to judge a design when the words are
-      ones you actually mean.
-    -->
-
-  <!--
-      STAGE TWO — the argument, in three cards.
-      Container, row, columns. Decide the whole first, then divide it. Three
-      reasons, side by side, each one a daisyUI card.
-
-      Build it here.
-    -->
-
-  <!--
-      STAGE THREE — make it survive a phone.
-      Three columns on a laptop is one unreadable column-and-a-bit on a phone.
-      Start from the phone case and add the wide case back with a breakpoint
-      prefix. Check 380, 768 and full width before you call it done.
-
-      This stage edits stage two rather than adding to it.
-    -->
-
-  <!--
-      STAGE FOUR — one media query, written by hand.
-      The prefixes are a convenience over ordinary CSS. Write one yourself once,
-      in styles.css, so the prefix stops being magic.
-    -->
-
-  <!--
-      FOOTER. Your name, and the credits.
-      Every image you add needs its creator, its source and its licence
-      recorded here. If you cannot write that line, you do not know whether you
-      are allowed to use the image.
-    -->
+  </div> <!-- END FEATURE BREAKOUT -->
 </body>
 
 </html>
