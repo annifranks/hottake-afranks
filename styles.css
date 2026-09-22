@@ -23,19 +23,26 @@
  * Change "nord" to whatever theme you set on <html>.
  */
 [data-theme='nord'] {
-  --color-primary: #FF70A6; 
-  --color-accent:  #70D6FF; 
-  --color-tangerine:#FF9770;
-  --color-gold:#FFD670;
-  --color-lime:#E9FF70;
+  --color-primary: #FF70A6;
+  --color-accent: #70D6FF;
+  --color-tangerine: #FF9770;
+  --color-gold: #FFD670;
+  --color-lime: #E9FF70;
 }
-body{
-  background-color:#ffedd8;
+
+body {
+  background-color: #ffedd8;
 }
-Footer {
-  background-color:rgba(0, 255, 255, 0.263)
+
+html {
+  scroll-behavior: smooth;
 }
-.hero{
+
+footer {
+  background-color: rgba(0, 255, 255, 0.263)
+}
+
+.hero {
   background-image: url("https://everest-icecream.com.au/wp-content/uploads/2024/05/dixie-group-2-0992-lr-wfebvsfzpiga-wfrtygycnsjh.jpg")
 }
 
@@ -44,6 +51,7 @@ Footer {
   font-size: 85px;
   color: (white);
 }
+
 /* TYPE
  *
  * Two faces: one for headings, chosen for tone; one for body, chosen for
